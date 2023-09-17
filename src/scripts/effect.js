@@ -141,52 +141,56 @@ $('document').ready(function(){
 		 vw = $(window).width()/2;
 		 mid = $(window).height()/2;
 
-		 mid_diff = mid/12;
-		 vw_diff = vw/12;
+		 mid_diff = mid/6;
+		 mid1=mid/2;
+		 mid2=mid;
+		 vw_diff = vw/3;
+		 vw_diff2 = vw/2.5;
+		 diff=mid/12;
 		$('#self').css({"display": "block", "bottom":'0px',"left":vw+'px'});
-		$('#self').animate({top:mid-mid_diff*4,left:vw},3000);
+		$('#self').animate({top:mid1-diff,left:vw_diff},3000);
 
 		$('#f1').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
-		$('#f1').animate({top:mid-mid_diff*3,left:vw-vw_diff*3},3000);
+		$('#f1').animate({top:mid2-diff,left:vw_diff2},3000);
 
 
 		$('#f2').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
-		$('#f2').animate({top:mid-mid_diff*3,left:vw+vw_diff*3},3000);
+		$('#f2').animate({top:mid1+diff,left:vw_diff*2},3000);
 
 
 		$('#f3').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
-		$('#f3').animate({top:mid-mid_diff*2,left:vw-vw_diff*4},3000);
+		$('#f3').animate({top:mid2+diff,left:vw_diff2*2},3000);
 
 		$('#f4').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
-		$('#f4').animate({top:mid-mid_diff*2,left:vw+vw_diff*4},3000);
+		$('#f4').animate({top:mid1-diff,left:vw_diff*3},3000);
 
 		$('#f5').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
-		$('#f5').animate({top:mid-mid_diff,left:vw+vw_diff*5},3000);
+		$('#f5').animate({top:mid2-diff,left:vw_diff2*3},3000);
 
 		$('#f6').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
-		$('#f6').animate({top:mid-mid_diff,left:vw-vw_diff*5},3000);
+		$('#f6').animate({top:mid1+diff,left:vw_diff*4},3000);
 
 		$('#f7').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
-		$('#f7').animate({top:mid,left:vw-vw_diff*6},3000);
+		$('#f7').animate({top:mid2+diff,left:vw_diff2*4},3000);
 
 
 		$('#f8').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
-		$('#f8').animate({top:mid,left:vw+vw_diff*6},3000);
+		$('#f8').animate({top:mid1-diff,left:vw_diff*5},3000);
 
 
-		$('#f9').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
-		$('#f9').animate({top:mid+mid_diff*3,left:vw+vw_diff*2},3000);
+		//$('#f9').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
+		//$('#f9').animate({top:mid+mid_diff*3,left:vw+vw_diff*2},3000);
 
-		$('#f10').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
-		$('#f10').animate({top:mid+mid_diff,left:vw-vw_diff*7},3000);
-
-
-		$('#f11').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
-		$('#f11').animate({top:mid+mid_diff,left:vw+vw_diff*7},3000);
+		//$('#f10').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
+		//$('#f10').animate({top:mid+mid_diff,left:vw-vw_diff*7},3000);
 
 
-		$('#f12').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
-		$('#f12').animate({top:mid+mid_diff*3,left:vw-vw_diff*4},3000);
+		//$('#f11').css({"display": "block", "top":500*Math.random()+'px',"right":'0px'});
+		//$('#f11').animate({top:mid+mid_diff,left:vw+vw_diff*7},3000);
+
+
+		//$('#f12').css({"display": "block", "top":500*Math.random()+'px',"left":'0px'});
+		//$('#f12').animate({top:mid+mid_diff*3,left:vw-vw_diff*4},3000);
 
 
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
@@ -214,6 +218,7 @@ $('document').ready(function(){
         var audio1 = $('.song1')[0];
         audio1.play();
 		$('body').addClass('peach-disco');
+		$('#self').addClass('dance-two')
 		$('#f1').addClass('dance-one')
 		$('#f3').addClass('dance-two')
 		$('#f2').addClass('dance-one')
@@ -222,11 +227,11 @@ $('document').ready(function(){
 		$('#f6').addClass('dance-one')
 		$('#f7').addClass('dance-two')
 		$('#f8').addClass('dance-two')
-		$('#f11').addClass('dance-two')
-		 $('#f12').addClass('dance-two')
-		$('#self').addClass('dance-one')
-		 $('#f9').addClass('dance-one')
-		$('#f10').addClass('dance-one')
+		//$('#f11').addClass('dance-two')
+		 //$('#f12').addClass('dance-two')
+		//$('#self').addClass('dance-one')
+		 //$('#f9').addClass('dance-one')
+		//$('#f10').addClass('dance-one')
 		
 		$('#bulb_yellow').addClass('bulb-glow-yellow-disco');
 		$('#bulb_red').addClass('bulb-glow-red-disco');
